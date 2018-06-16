@@ -1,0 +1,19 @@
+{
+  "name": "weedus/exceptions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benno Czopp",
+      "email": "b.czopp@gmx.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Weedus\\": "src/"
+    }
+  }
+}
