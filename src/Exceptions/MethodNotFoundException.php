@@ -8,8 +8,11 @@
 
 namespace Weedus\Exceptions;
 
-
 class MethodNotFoundException extends \Exception
 {
+    public function __construct(string $method, string $class)
+    {
+        parent::__construct("No method '$method' found for class '$class'.");
+    }
 
 }

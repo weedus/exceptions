@@ -9,7 +9,13 @@
 namespace Weedus\Exceptions;
 
 
+use Throwable;
+
 class WorkInProgressException extends \Exception
 {
+    public function __construct(string $message = "")
+    {
+        parent::__construct('WORK IN PROGRESS'.($message ? ": $message": ""));
+    }
 
 }
